@@ -61,7 +61,7 @@ it will produce file difftable.csv with list of actions:
 Run command to apply actions from actions file
 .. code-block:: bash
 
-    $diffmongo apply -df difftable.csv -fd massfounders -fc massfounders -td massfounders -tc mold
+    $ diffmongo apply -df difftable.csv -fd massfounders -fc massfounders -td massfounders -tc mold
 
 it will read file difftable.csv and apply each action to the collection mold
 
