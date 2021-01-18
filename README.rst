@@ -17,6 +17,12 @@ History
 This tool was developed for APICrafter project, to keep sane updated of production MongoDb collection.
 APICrafter is a data platform that provided access to high quality datasets via API.
 
+
+Requirements
+=============
+
+This module uses datadifflib - https://github.com/datacoon/datadifflib
+
 Main features
 =============
 
@@ -44,8 +50,11 @@ Run command to generate action list
     $ diffmongo compare -fd massfounders -fc massfounders -td massfounders -tc mold -i inn -o difftable.csv
 
 it will produce file difftable.csv with list of actions:
+
 * "a" - to add record
+
 * "d" - to delete record
+
 * "c" - to update changed record
 
 
@@ -67,7 +76,10 @@ Synopsis:
 
 
 Commands:
+
 *  apply      Apply diff table to the MongoDb collection
+
 *  compare    Compares to MongoDB collections and generates table of...
+
 *  indexcoll  Index single collection
 
