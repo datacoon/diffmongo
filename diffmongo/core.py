@@ -38,7 +38,6 @@ def indexcoll(host, port, db, collection, idkey, output, verbose):
         enableVerbose()
     acmd = MongoIndexer()
     acmd.indexcoll(host, int(port), db, collection, idkey, output)
-    pass
 
 @click.group()
 def cli2():
@@ -62,7 +61,6 @@ def compare(fromhost, fromport, fromdb, fromcoll, tohost, toport, todb, tocoll, 
         enableVerbose()
     acmd = MongoComparator()
     acmd.compare(fromhost, fromport, fromdb, fromcoll, tohost, toport, todb, tocoll, idkey, output)
-    pass
 
 @click.group()
 def cli3():
@@ -85,7 +83,6 @@ def apply(diffile, fromhost, fromport, fromdb, fromcoll, tohost, toport, todb, t
         enableVerbose()
     acmd = MongoComparator()
     acmd.apply(diffile, fromhost, fromport, fromdb, fromcoll, tohost, toport, todb, tocoll)
-    pass
 
 
 
