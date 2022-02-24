@@ -34,7 +34,10 @@ tests_require = [
 
 
 install_requires = [
-    'bson',
+    'pymongo',
+    'xxhash',
+    'click',
+    'datadifflib'
 ]
 
 
